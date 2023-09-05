@@ -12,12 +12,11 @@ if (isset($_GET['cerrar_sesion'])) {
 ?>
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Inicio</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../paginainicio/css/index.css">
     <meta charset="UTF-8">
 
 </head>
@@ -40,7 +39,7 @@ if (isset($_GET['cerrar_sesion'])) {
 
     <section id="hero">
         <h1>El mejor servicio y seguridad<br>Para tu locker</h1>
-        <button><a href="../mapa/index.php">Reserva ya!</button></a>
+        <button><a href="../mapa/index.php" style="text-decoration: none;color:white">Reserva ya!</button></a>
 
     </section>
 
@@ -92,7 +91,7 @@ if (isset($_GET['cerrar_sesion'])) {
 
     <section id="final">
         <h2>No te has registrado?</h2>
-        <button><a href="../Inicios/Registro.html">Registrate!</button>
+        <button><a href="../Inicios/Registro.html" style="text-decoration: none;color:white">Registrate!</button>
     </section>
 
     <footer>
