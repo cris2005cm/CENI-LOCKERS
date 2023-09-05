@@ -68,7 +68,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
         <div class="input-contenedor">
             <i class="fas fa-user-secret icon"></i>
-            <input type="password" name="contrasena" placeholder="Contraseña">
+            <input type="text" name="contrasena" placeholder="Contraseña" value="<?php echo $fila['contrasena']; ?>">
         </div>
 
         <div class="input-contenedor">
