@@ -1,11 +1,12 @@
 <?php
+session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
     include('Conexion.php');
 
     $nombre = $_POST['nombre'];
     $inquietud = $_POST['inquietud'];
+    $correo = $_SESSION['email']; 
 
     if ($nombre == "" || $inquietud == "") {
         echo "<script>alert('Debes completar todos los campos');
@@ -13,8 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-
-    $consulta = "INSERT INTO preguntas (nombre, inquietud) VALUES ('$nombre', '$inquietud')";
+    $consulta = "INSERT INTO preguntas (nombre, inquietud, correo) VALUES ('$nombre', '$inquietud','$correo')";
 
     if (mysqli_query($conexion, $consulta)) {
         echo "<script>alert('Inquietud registrada correctamente');
