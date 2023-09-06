@@ -6,7 +6,7 @@ session_start();
 $Id = $_POST['id_login'];
 $Contrasena = $_POST['contrasena'];
 
-$consulta = "SELECT id_usuarios, contrasena, nombre, rol FROM usuarios WHERE id_usuarios = '$Id'";
+$consulta = "SELECT id_usuarios, contrasena, nombre, rol, correo FROM usuarios WHERE id_usuarios = '$Id'";
 $resultado = mysqli_query($conexion, $consulta);
 $usuario = mysqli_fetch_array($resultado);
 
@@ -17,6 +17,8 @@ $usuario = mysqli_fetch_array($resultado);
     $_SESSION['username'] = $usuario['nombre'];
     $_SESSION['id'] = $usuario['id_usuarios'];
     $_SESSION['rol'] = $usuario['rol'];
+    $_SESSION['email'] = $usuario['correo'];
+
 
     if ($usuario['rol'] == "Administrador") {
         header("Location: ../Administrador/Administrador.php");
