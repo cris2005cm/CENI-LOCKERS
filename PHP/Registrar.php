@@ -30,6 +30,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 
+    $IdExistente = "SELECT * FROM usuarios WHERE id_usuarios = '$identificacion'";
+    $resultado = mysqli_query($conexion, $IdExistente);
+    if (mysqli_num_rows($resultado) > 0) {
+        echo "<script>alert('El número de identificación ya está en uso');
+        window.location.href = '../Inicios/Registro.html';</script>";
+        exit();
+    }
+
     $correoExistente = "SELECT * FROM usuarios WHERE correo = '$email'";
     $resultado = mysqli_query($conexion, $correoExistente);
     if (mysqli_num_rows($resultado) > 0) {
