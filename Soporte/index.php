@@ -6,7 +6,6 @@ Inactividad(1800);
 if (isset($_GET['cerrar_sesion'])) {
     cerrarSesion();
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -133,6 +132,7 @@ if (isset($_GET['cerrar_sesion'])) {
                       <label for="Nombre" id="LabName" >Nombre del Aprendiz:</label>
                       <input type="text" name="nombre" class="form-control" placeholder="Nombre..." id="Nombre" value="<?php echo $_SESSION['username']; ?>" readonly>
                     </div>
+                    
                     <div class="form-group">
                       <label for="Inquietud">Escriba su Inquietud:</label>
                       <textarea class="form-control" name="inquietud" placeholder="Inquietud..." id="Inquietud" rows="3"></textarea>
