@@ -79,6 +79,7 @@ header a{
 
 header a:hover{
     color: blueviolet;
+    text-decoration: none;
 }
 
 /* 1 Parte - Principal */
