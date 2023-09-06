@@ -12,12 +12,11 @@ if (isset($_GET['cerrar_sesion'])) {
 ?>
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Inicio</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../paginainicio/css/index.css">
     <meta charset="UTF-8">
 
 </head>
@@ -28,19 +27,19 @@ if (isset($_GET['cerrar_sesion'])) {
             <nav>
                 <a href="#container">Contactenos</a>
                 <a href="../Soporte/index.php">Soporte</a>
-                
+               
                 <a href="../reportes/index.php">Reportes</a>
                 <a href="../cancelacion/cancelacionn.php">Cancelación</a>
 
                 <a href="?cerrar_sesion=1">Cerrar Sesión</a>
-                
+               
             </nav>
         </div>
     </header>
 
     <section id="hero">
         <h1>El mejor servicio y seguridad<br>Para tu locker</h1>
-        <button><a href="../mapa/index.php">Reserva ya!</button></a>
+        <button><a href="../mapa/index.php" style="text-decoration: none;color:white">Reserva ya!</button></a>
 
     </section>
 
@@ -73,7 +72,7 @@ if (isset($_GET['cerrar_sesion'])) {
 
 
 </p>
-                    
+                   
                 </div>  
             </div>
         </div>
@@ -92,7 +91,7 @@ if (isset($_GET['cerrar_sesion'])) {
 
     <section id="final">
         <h2>No te has registrado?</h2>
-        <button><a href="../Inicios/Registro.html">Registrate!</button>
+        <button><a href="../Inicios/Registro.html" style="text-decoration: none;color:white">Registrate!</button>
     </section>
 
     <footer>
@@ -107,8 +106,8 @@ if (isset($_GET['cerrar_sesion'])) {
             <br>
             <p>✔️ Linea gratuita 018000000-0000</p>
 
-        
-                
+       
+               
         </div>
     </footer>
 </body>
