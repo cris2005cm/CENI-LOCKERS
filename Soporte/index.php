@@ -131,7 +131,7 @@ if (isset($_GET['cerrar_sesion'])) {
                 <form action="../PHP/Preguntas.php" method="post">
                     <div class="form-group">
                       <label for="Nombre" id="LabName" >Nombre del Aprendiz:</label>
-                      <input type="text" name="nombre" class="form-control" placeholder="Nombre..." id="Nombre">
+                      <input type="text" name="nombre" class="form-control" placeholder="Nombre..." id="Nombre" value="<?php echo $_SESSION['username']; ?>" readonly>
                     </div>
                     <div class="form-group">
                       <label for="Inquietud">Escriba su Inquietud:</label>
