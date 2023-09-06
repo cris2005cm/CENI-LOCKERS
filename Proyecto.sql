@@ -6,7 +6,8 @@ Use Proyecto;
 create table preguntas(
     id_Preguntas int AUTO_INCREMENT PRIMARY KEY not null,
     nombre varchar(60) not null,
-    inquietud varchar(200) not null
+    inquietud varchar(200) not null,
+    correo varchar(60) not null
 );
 
 CREATE TABLE cancelacion(
