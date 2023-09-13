@@ -15,3 +15,16 @@
   color: #fff; /* Keep the text color on hover */
   transition: background-color 0.3s ease;
 }
+#myModal7 #form-seccion-7 {
+  /* Define el ancho y el alto que desees para el formulario */
+  width: 80%; /* Cambia el valor según tus necesidades */
+  height: 400px; /* Cambia el valor según tus necesidades */
+  /* Añade otros estilos si es necesario */
+}
+
+/* Asegúrate de que el contenido del formulario esté centrado en la ventana modal */
+#myModal7 #form-seccion-7 .modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
