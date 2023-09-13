@@ -108,47 +108,43 @@ header a:hover{
 #hero button{
     font-size: 1.75em;
 }
-#hero #s7{
-position: relative;
-top:-180px;
-right:790px;
-}
 
-#s7{
-    height: 150px;
-    width: 120px;
-    background-color: blueviolet;
-}
+
+
 
 #hero #s6{
     position: relative;
-    top:250px;
-    right:670px;
+    top:-380px;
+    left:-50px;
 
     
+}
+#s6{
+    height: 100px;
+    width: 500px;
+    background-color: blueviolet;
+   text-align: center;
+
+
 }
 #s5{
     position: relative;
     background-color: blueviolet;
     left: 200px;
-    height: 100px;
+    height: 70px;
 
 }
-#s6{
-    width:120px;
-    height: 150px;
-    background-color: blueviolet;
-}
+
 #hero #s5{
     position: relative;
-    top:   10px;
-    left: 10px;
+    top:   50px;
+    left: -40px;
 }
 
 #hero #s4{
     position: relative;
-    top:-180px;
-    left:180px;
+    top:180px;
+    left:710px;
     background-color: blueviolet;
    
 
@@ -158,8 +154,8 @@ right:790px;
 }
 #hero #s3{
     position: relative;
-    left:40px;
-    top:240px;
+    left:180px;
+    top:70px;
     background-color: blueviolet;
 
 }
@@ -168,8 +164,8 @@ right:790px;
 }
 #hero #s2{
     position: relative;
-    top:-180px;
-    right:-180px;
+    top:130px;
+    left:400px;
     background-color: blueviolet;
 
 
@@ -178,9 +174,10 @@ right:790px;
     height: 100px;
 }
 #hero #s1{
+    padding: 10px;
     position: relative;
-    top:240px;
-    right:-40px;
+    top:20px;
+    left:100px;
     background-color: blueviolet;
 
 
@@ -196,9 +193,11 @@ right:790px;
 #s7 h6{
     text-align: center;
     
+    
 }
 #s6 h6{
     text-align: center;
+    font-size:smaller;
 }
 
 #somos-proya .container{
@@ -331,7 +330,49 @@ footer .container{
         font-size: 5em;
     }
 
+   #hero{
+    width: 100%;
+   }
+   #hero #s1{
+    padding: 10px;
+    position: relative;
+    top:20px;
+    left:-180px;
+    background-color: blueviolet;
+
+
+}
+#hero #s2{
    
+   
+    left:100px;
+    background-color: blueviolet;
+
+
+}
+#hero #s3{
+  
+    left:-180px;
+   
+    background-color: blueviolet;
+
+}
+#hero #s4{
+    left:100px;
+    background-color: blueviolet;
+}
+    #hero #s5{
+    left: -30px;
+}
+
+
+
+
+
+
+
+
+ 
 
     #somos-proya .container{
         display: flex;
