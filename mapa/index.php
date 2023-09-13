@@ -45,7 +45,7 @@ if (isset($_GET['cerrar_sesion'])) {
 
 <!-- MODALES BOTONES -->
 <section id="hero">
-    <div class="container">
+    
     
   
   <!-- Modal -->
@@ -72,12 +72,11 @@ if (isset($_GET['cerrar_sesion'])) {
         </button>
    
     <button type="button" id="s6" class="btn btn-primary" data-toggle="modal" data-target="#myModal6">
-            sección 6
+            sección 6 y sección 7
         </button>
+      
     
-    <button type="button" id="s7" class="btn btn-primary" data-toggle="modal" data-target="#myModal7">
-            sección 7
-        </button>
+   
 </section>
         
 
@@ -284,7 +283,7 @@ if (isset($_GET['cerrar_sesion'])) {
       
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Seccion 6</h4>
+          <h4 class="modal-title">Sección 6</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         
@@ -302,6 +301,19 @@ if (isset($_GET['cerrar_sesion'])) {
                     <br>
                     <button type="submit" class="btn btn-primary">Aceptar</button>
                 </form>
+                <h4 class="modal-title">Sección 7</h4>
+                 <form method="post" action="../mapa/reserva.php">
+                    <label for="numberSelect">Selecciona tu casillero</label>
+                    <select id="numberSelect" name="locker" class="form-control">
+                        <?php
+                            for ($i = 466; $i <= 480; $i++) {
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>
+                    </select>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                </form>
         </div>
         
         <!-- Modal footer -->
@@ -311,10 +323,7 @@ if (isset($_GET['cerrar_sesion'])) {
         
       </div>
     </div>
-  </div>
-
-
-  <div class="modal fade" id="myModal7">
+    <div class="modal fade" id="myModal7">
     <div class="modal-dialog">
       <div class="modal-content">
       
@@ -349,6 +358,10 @@ if (isset($_GET['cerrar_sesion'])) {
     </div>
   </div>
 
+  </div>
+
+
+ 
 
 
 
