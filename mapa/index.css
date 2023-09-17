@@ -95,7 +95,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("media/hero.jpg");
+    ,url("media/grises.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -291,7 +291,8 @@ header a:hover{
 }
 
 footer{
-    background-color: rgb(230,230,230);
+    background-color: rgb(23, 23, 23);
+    
     
 }
 
@@ -299,14 +300,13 @@ footer p{
     margin: 0;
     padding: 12px;
     color: rgb(100,100,100);
-    text-align: center;
+   
 }
 
 footer .container{
     height: 150px;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    text-align: center;
 }
 
 @media (min-width: 850px){
@@ -394,7 +394,7 @@ footer .container{
     }
 
     #somos-proya .img-container{
-        background-image: url("media/somos-proya.jpg");
+        background-image: url("media/programador.jpeg");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -445,7 +445,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("media/full-stack-cropped.jpg");
+        ,url("media/vista-posterior-programador-trabajando-toda-noche.jpg");
     }
 
     .carta:nth-child(3){
@@ -459,7 +459,7 @@ footer .container{
     }
 
     #caracteristicas{
-        background-image: url("media/lock.jpeg");
+        background-image: url("media/4380747.jpg");
         background-repeat: no-repeat;
         background-size: 500px 400px;
         background-position: calc(100vw - 500px) 120px;
