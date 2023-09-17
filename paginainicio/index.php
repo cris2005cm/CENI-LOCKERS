@@ -1,15 +1,4 @@
-<?php
-include('../PHP/Funciones.php');
 
-
-
-InicioSesion();
-Inactividad(1800);
-if (isset($_GET['cerrar_sesion'])) {
-    cerrarSesion();
-}
-
-?>
 
 
 <!DOCTYPE html>
