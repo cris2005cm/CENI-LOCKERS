@@ -91,7 +91,7 @@ if (isset($_GET['cerrar_sesion'])) {
 
     <section id="final">
         <h2>No te has registrado?</h2>
-        <button><a href="../Inicios/Registro.html" style="text-decoration: none;color:white">Registrate!</button>
+        <button><a href="../Inicios/Registro.html" style="text-decoration: none;color:white">Registrate!</a></button>
     </section>
 
     <footer>
