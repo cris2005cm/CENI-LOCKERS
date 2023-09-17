@@ -43,19 +43,19 @@
         }
 
         // Llamada inicial al cargar la página
-        window.addEventListener("load", function() {
-            var tiempoGuardado = localStorage.getItem("tiempoCronometro");
-            if (tiempoGuardado) {
-                var tiempo = JSON.parse(tiempoGuardado);
+       window.addEventListener("load", function() {
+         var tiempoGuardado = localStorage.getItem("tiempoCronometro");
+         if (tiempoGuardado) {
+                 var tiempo = JSON.parse(tiempoGuardado);
                 contadorSegundos = tiempo.segundos;
-                contadorMinutos = tiempo.minutos;
-                contadorHoras = tiempo.horas;
-                mostrarTiempo();
-                if (cronometroActivo) {
-                    iniciarCronometro();
+                 contadorMinutos = tiempo.minutos;
+               contadorHoras = tiempo.horas;
+               mostrarTiempo();
+               if (cronometroActivo) {
+                   iniciarCronometro();
                 }
-            }
-        });
+           }
+       });
 
         // Guardar el estado del cronómetro antes de recargar la página
         window.addEventListener("beforeunload", function() {
@@ -78,5 +78,12 @@
                 mostrarTiempo();
             }
             cronometroActivo = !cronometroActivo;
-        });
+           },
+        document.getElementById("iniciar").addEventListener("click", function() {
+                if (!cronometroActivo) {
+                    iniciarCronometro();
+                    cronometroActivo = true;
+                }
+            
+        }));
 
